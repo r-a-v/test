@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		7522E0A826E603C3002EE1CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0A726E603C3002EE1CE /* AppDelegate.swift */; };
 		7522E0AA26E603C3002EE1CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0A926E603C3002EE1CE /* SceneDelegate.swift */; };
-		7522E0AC26E603C3002EE1CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0AB26E603C3002EE1CE /* ViewController.swift */; };
-		7522E0AF26E603C3002EE1CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7522E0AD26E603C3002EE1CE /* Main.storyboard */; };
+		7522E0AC26E603C3002EE1CE /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0AB26E603C3002EE1CE /* ListViewController.swift */; };
 		7522E0B126E603C5002EE1CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7522E0B026E603C5002EE1CE /* Assets.xcassets */; };
 		7522E0B426E603C5002EE1CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7522E0B226E603C5002EE1CE /* LaunchScreen.storyboard */; };
+		7522E0BC26E6087D002EE1CE /* DetailVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0BB26E6087D002EE1CE /* DetailVIewController.swift */; };
+		7522E0BE26E60A3C002EE1CE /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0BD26E60A3C002EE1CE /* UILabel + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7522E0A426E603C3002EE1CE /* test_QEX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_QEX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7522E0A726E603C3002EE1CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7522E0A926E603C3002EE1CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7522E0AB26E603C3002EE1CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7522E0AE26E603C3002EE1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7522E0AB26E603C3002EE1CE /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		7522E0B026E603C5002EE1CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7522E0B326E603C5002EE1CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7522E0B526E603C5002EE1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7522E0BB26E6087D002EE1CE /* DetailVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVIewController.swift; sourceTree = "<group>"; };
+		7522E0BD26E60A3C002EE1CE /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				7522E0A726E603C3002EE1CE /* AppDelegate.swift */,
 				7522E0A926E603C3002EE1CE /* SceneDelegate.swift */,
-				7522E0AB26E603C3002EE1CE /* ViewController.swift */,
-				7522E0AD26E603C3002EE1CE /* Main.storyboard */,
+				7522E0AB26E603C3002EE1CE /* ListViewController.swift */,
 				7522E0B026E603C5002EE1CE /* Assets.xcassets */,
 				7522E0B226E603C5002EE1CE /* LaunchScreen.storyboard */,
 				7522E0B526E603C5002EE1CE /* Info.plist */,
+				7522E0BB26E6087D002EE1CE /* DetailVIewController.swift */,
+				7522E0BD26E60A3C002EE1CE /* UILabel + Extension.swift */,
 			);
 			path = test_QEX;
 			sourceTree = "<group>";
@@ -126,7 +129,6 @@
 			files = (
 				7522E0B426E603C5002EE1CE /* LaunchScreen.storyboard in Resources */,
 				7522E0B126E603C5002EE1CE /* Assets.xcassets in Resources */,
-				7522E0AF26E603C3002EE1CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +139,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7522E0AC26E603C3002EE1CE /* ViewController.swift in Sources */,
+				7522E0AC26E603C3002EE1CE /* ListViewController.swift in Sources */,
+				7522E0BE26E60A3C002EE1CE /* UILabel + Extension.swift in Sources */,
 				7522E0A826E603C3002EE1CE /* AppDelegate.swift in Sources */,
 				7522E0AA26E603C3002EE1CE /* SceneDelegate.swift in Sources */,
+				7522E0BC26E6087D002EE1CE /* DetailVIewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7522E0AD26E603C3002EE1CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7522E0AE26E603C3002EE1CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7522E0B226E603C5002EE1CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,6 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74TTKMJX34;
 				INFOPLIST_FILE = test_QEX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "alexander-rudikov.test-QEX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74TTKMJX34;
 				INFOPLIST_FILE = test_QEX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +313,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "alexander-rudikov.test-QEX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
