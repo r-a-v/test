@@ -1,6 +1,6 @@
 # test
 
-UIKit
-URLSession
-MVVM
-UnitTests
+UIKit,
+URLSession,
+MVVM,
+UnitTests.
