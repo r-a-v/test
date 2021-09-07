@@ -16,13 +16,14 @@ class NetworkService {
     private init() {}
     
     func getPosts(completion: @escaping (Result<ResponseModel, Error>) -> Void) {
+        guard let url = URL(string: allPostsURLString) else { return }
         
-        let url = URL(string: allPostsURLString)!
-        
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard error == nil,
-                  let data = data
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let responseStatus = response as? HTTPURLResponse,
+                  responseStatus.statusCode == 200
             else { return }
+            
+            guard let data = data, error == nil else { return }
             
             do {
                 let decoder = JSONDecoder()

@@ -17,19 +17,7 @@ protocol ListViewModelProtocol {
 
 class ListViewModel: ListViewModelProtocol {
     var posts: [Post] = []
-    
-    func getPosts(completion: @escaping (Bool) -> Void) {
-        NetworkService.shared.getPosts { result in
-            switch result {
-            case .success(let apiResponse):
-                self.posts = apiResponse.posts
-                completion(true)
-            case .failure(_):
-                completion(false)
-            }
-        }
-    }
-    
+
     func numberOfRows() -> Int {
         posts.count
     }
@@ -42,5 +30,17 @@ class ListViewModel: ListViewModelProtocol {
     func detailViewModel(at indexPath: IndexPath) -> DetailViewModelProtocol {
         let post = posts[indexPath.row]
         return DetailViewModel(post: post)
+    }
+    
+    func getPosts(completion: @escaping (Bool) -> Void) {
+        NetworkService.shared.getPosts { result in
+            switch result {
+            case .success(let responseModel):
+                self.posts = responseModel.posts
+                completion(true)
+            case .failure(_):
+                completion(false)
+            }
+        }
     }
 }

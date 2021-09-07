@@ -25,16 +25,16 @@ class ListCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configureViews()
     }
-
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     override func prepareForReuse() {
         super.prepareForReuse()
         titleLabel.text?.removeAll()
         descriptionLabel.text?.removeAll()
         imageViewCell.image = UIImage(systemName: "photo")
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 
 //    MARK: - Private methods
