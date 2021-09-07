@@ -105,7 +105,7 @@
 		7522E0A626E603C3002EE1CE /* test_QEX */ = {
 			isa = PBXGroup;
 			children = (
-				7522E0D426E66422002EE1CE /* List */,
+				7522E0D426E66422002EE1CE /* ListView */,
 				7522E0D626E6643C002EE1CE /* DetailView */,
 				7522E0DB26E664B6002EE1CE /* Models */,
 				7522E0D826E66475002EE1CE /* Services */,
@@ -127,23 +127,23 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		7522E0D426E66422002EE1CE /* List */ = {
+		7522E0D426E66422002EE1CE /* ListView */ = {
 			isa = PBXGroup;
 			children = (
-				7522E0D526E6642E002EE1CE /* ListCell */,
+				7522E0D526E6642E002EE1CE /* ListViewCell */,
 				7522E0C926E64703002EE1CE /* ListViewModel.swift */,
 				7522E0AB26E603C3002EE1CE /* ListViewController.swift */,
 			);
-			path = List;
+			path = ListView;
 			sourceTree = "<group>";
 		};
-		7522E0D526E6642E002EE1CE /* ListCell */ = {
+		7522E0D526E6642E002EE1CE /* ListViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				7522E0C326E6291A002EE1CE /* ListCell.swift */,
 				7522E0CD26E64A54002EE1CE /* ListCellViewModel.swift */,
 			);
-			path = ListCell;
+			path = ListViewCell;
 			sourceTree = "<group>";
 		};
 		7522E0D626E6643C002EE1CE /* DetailView */ = {
