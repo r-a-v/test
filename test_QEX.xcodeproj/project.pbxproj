@@ -14,6 +14,15 @@
 		7522E0B426E603C5002EE1CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7522E0B226E603C5002EE1CE /* LaunchScreen.storyboard */; };
 		7522E0BC26E6087D002EE1CE /* DetailVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0BB26E6087D002EE1CE /* DetailVIewController.swift */; };
 		7522E0BE26E60A3C002EE1CE /* UILabel + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0BD26E60A3C002EE1CE /* UILabel + Extension.swift */; };
+		7522E0C026E60F47002EE1CE /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0BF26E60F47002EE1CE /* NetworkService.swift */; };
+		7522E0C226E6102C002EE1CE /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0C126E6102C002EE1CE /* Post.swift */; };
+		7522E0C426E6291A002EE1CE /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0C326E6291A002EE1CE /* ListCell.swift */; };
+		7522E0C626E632D2002EE1CE /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0C526E632D2002EE1CE /* ImageService.swift */; };
+		7522E0CA26E64703002EE1CE /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0C926E64703002EE1CE /* ListViewModel.swift */; };
+		7522E0CE26E64A54002EE1CE /* ListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0CD26E64A54002EE1CE /* ListCellViewModel.swift */; };
+		7522E0D026E65BA1002EE1CE /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0CF26E65BA1002EE1CE /* DetailViewModel.swift */; };
+		7522E0E326E67751002EE1CE /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7522E0E226E67751002EE1CE /* UIViewController + Extension.swift */; };
+		75756CD726E7192200C1DCF4 /* UIImageView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75756CD626E7192200C1DCF4 /* UIImageView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,15 @@
 		7522E0B526E603C5002EE1CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7522E0BB26E6087D002EE1CE /* DetailVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVIewController.swift; sourceTree = "<group>"; };
 		7522E0BD26E60A3C002EE1CE /* UILabel + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel + Extension.swift"; sourceTree = "<group>"; };
+		7522E0BF26E60F47002EE1CE /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		7522E0C126E6102C002EE1CE /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		7522E0C326E6291A002EE1CE /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		7522E0C526E632D2002EE1CE /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		7522E0C926E64703002EE1CE /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		7522E0CD26E64A54002EE1CE /* ListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellViewModel.swift; sourceTree = "<group>"; };
+		7522E0CF26E65BA1002EE1CE /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		7522E0E226E67751002EE1CE /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
+		75756CD626E7192200C1DCF4 /* UIImageView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +76,97 @@
 		7522E0A626E603C3002EE1CE /* test_QEX */ = {
 			isa = PBXGroup;
 			children = (
-				7522E0A726E603C3002EE1CE /* AppDelegate.swift */,
-				7522E0A926E603C3002EE1CE /* SceneDelegate.swift */,
-				7522E0AB26E603C3002EE1CE /* ListViewController.swift */,
-				7522E0B026E603C5002EE1CE /* Assets.xcassets */,
-				7522E0B226E603C5002EE1CE /* LaunchScreen.storyboard */,
-				7522E0B526E603C5002EE1CE /* Info.plist */,
-				7522E0BB26E6087D002EE1CE /* DetailVIewController.swift */,
-				7522E0BD26E60A3C002EE1CE /* UILabel + Extension.swift */,
+				7522E0D426E66422002EE1CE /* List */,
+				7522E0D626E6643C002EE1CE /* DetailView */,
+				7522E0DB26E664B6002EE1CE /* Models */,
+				7522E0D826E66475002EE1CE /* Services */,
+				7522E0DA26E664A6002EE1CE /* Extensions */,
+				7522E0D126E663F6002EE1CE /* App */,
+				7522E0D726E6645B002EE1CE /* Storyboards */,
+				7522E0D926E6648B002EE1CE /* Resources */,
 			);
 			path = test_QEX;
+			sourceTree = "<group>";
+		};
+		7522E0D126E663F6002EE1CE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7522E0A726E603C3002EE1CE /* AppDelegate.swift */,
+				7522E0A926E603C3002EE1CE /* SceneDelegate.swift */,
+				7522E0B526E603C5002EE1CE /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7522E0D426E66422002EE1CE /* List */ = {
+			isa = PBXGroup;
+			children = (
+				7522E0D526E6642E002EE1CE /* ListCell */,
+				7522E0C926E64703002EE1CE /* ListViewModel.swift */,
+				7522E0AB26E603C3002EE1CE /* ListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		7522E0D526E6642E002EE1CE /* ListCell */ = {
+			isa = PBXGroup;
+			children = (
+				7522E0C326E6291A002EE1CE /* ListCell.swift */,
+				7522E0CD26E64A54002EE1CE /* ListCellViewModel.swift */,
+			);
+			path = ListCell;
+			sourceTree = "<group>";
+		};
+		7522E0D626E6643C002EE1CE /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				7522E0CF26E65BA1002EE1CE /* DetailViewModel.swift */,
+				7522E0BB26E6087D002EE1CE /* DetailVIewController.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		7522E0D726E6645B002EE1CE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7522E0B226E603C5002EE1CE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7522E0D826E66475002EE1CE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7522E0C526E632D2002EE1CE /* ImageService.swift */,
+				7522E0BF26E60F47002EE1CE /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7522E0D926E6648B002EE1CE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7522E0B026E603C5002EE1CE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7522E0DA26E664A6002EE1CE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7522E0BD26E60A3C002EE1CE /* UILabel + Extension.swift */,
+				7522E0E226E67751002EE1CE /* UIViewController + Extension.swift */,
+				75756CD626E7192200C1DCF4 /* UIImageView + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7522E0DB26E664B6002EE1CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7522E0C126E6102C002EE1CE /* Post.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +239,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				7522E0AC26E603C3002EE1CE /* ListViewController.swift in Sources */,
+				7522E0E326E67751002EE1CE /* UIViewController + Extension.swift in Sources */,
+				75756CD726E7192200C1DCF4 /* UIImageView + Extension.swift in Sources */,
+				7522E0CA26E64703002EE1CE /* ListViewModel.swift in Sources */,
+				7522E0CE26E64A54002EE1CE /* ListCellViewModel.swift in Sources */,
 				7522E0BE26E60A3C002EE1CE /* UILabel + Extension.swift in Sources */,
+				7522E0C626E632D2002EE1CE /* ImageService.swift in Sources */,
 				7522E0A826E603C3002EE1CE /* AppDelegate.swift in Sources */,
 				7522E0AA26E603C3002EE1CE /* SceneDelegate.swift in Sources */,
+				7522E0C026E60F47002EE1CE /* NetworkService.swift in Sources */,
+				7522E0D026E65BA1002EE1CE /* DetailViewModel.swift in Sources */,
+				7522E0C426E6291A002EE1CE /* ListCell.swift in Sources */,
+				7522E0C226E6102C002EE1CE /* Post.swift in Sources */,
 				7522E0BC26E6087D002EE1CE /* DetailVIewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +392,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74TTKMJX34;
-				INFOPLIST_FILE = test_QEX/Info.plist;
+				INFOPLIST_FILE = test_QEX/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -304,7 +412,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74TTKMJX34;
-				INFOPLIST_FILE = test_QEX/Info.plist;
+				INFOPLIST_FILE = test_QEX/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
